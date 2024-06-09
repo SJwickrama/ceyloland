@@ -1,0 +1,258 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Quiz</title>
+        
+        
+        <link rel="stylesheet" href="quiz.css"> <!--Import CSS file-->
+        
+    </head>
+    <body>
+        
+
+        <!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+        <nav class="flex">
+          <img id="logo" src="../images/logo1.png" alt=" logo" />
+          <ul>
+            <!-- All nav links not yet working cause other member files not available in individual submission -->
+           <li><a href="../Main/main.html">Home</a></li>
+           <li><a href="../Thumbnail/thumbnail.html">Gallery</a></li>
+           <li><a class="active" href="quiz_2.html">Quiz</a></li>
+           <li><a href="../Shop/shop.html">Shop</a></li>
+           <li><a href="../Sitemap/sitemap.html">Sitemap</a></li>
+           <li><a href="../Feedback/feedback.html">Feedback</a></li>
+           <li><a href="../AboutUs/aboutus2.html">About us</a></li>
+            
+          </ul>
+        </nav>
+      </header> 
+
+
+
+        <!--Created button for start the quiz-->
+        <div  class="strt_button" id="strtbtn">
+            <h1> ARE  YOU READY!!!!</h1>
+            <button type="button" onclick="showinfo()"><b>Start the Quiz</b></button>
+        </div>
+        <div class="info_box" id="infobox" hidden>
+            <div class="info_title">
+                <Span>Some information for the participants.</Span>
+            </div>
+            <div class="info_lst" ><!--Informationn-->
+                <div class="info">1. You'll have <span>10 questions</span>.</div>
+                <div class="info">2. You'll recieve <span>1 minute</span> for answer 10 questions.<span>After 1 minute questions will be submitted automatically.  </span></div>
+                <div class="info">3. Most of the questions are based on world famous places. </div>
+                <div class="info">4. You'll get  points based on each correct answer.</div>
+            </div>
+            <div class="other_buttons"><!--Two buttons for exit and continue-->
+                <button class="ext_button" onclick="quit()">Exit</button>
+                <button class="continue_button" onclick="showquestion()">Continue</button>
+            </div>
+        </div>
+        <div id="Question_area" class="Qbox" hidden>
+            <div class="question_box"><!--Question 1-->
+                <p class="Q_number">Question 1</p>
+                <p class="Question">What is the world largest water park?</p>
+                <input type="radio" class="answer" name="answer1" value="0">Beach park-Brazil<br>
+                <input type="radio" class="answer" name="answer1" value="1">Carribian bay-South korea<br>
+                <input type="radio" class="answer" name="answer1" value="2">Westside water park-Australia<br>
+                <input type="radio" class="answer" name="answer1" value="3">siam park- Spain<br>
+            </div>
+            <div class="question_box"><!--Question 2-->
+                <p class="Q_number">Question 2</p>
+                <p class="Question">What is the world largest indoor water park?</p>
+                <input type="radio" class="answer" name="answer2" value="0">Beach park - Brazil<br>
+                <input type="radio" class="answer" name="answer2" value="1">Siam park  - Spain<br>
+                <input type="radio" class="answer" name="answer2" value="2">Tropical island resort  - Germany<br>
+                <input type="radio" class="answer" name="answer2" value="3">West side pater park  - Australia<br>
+            </div>
+            <div class="question_box"><!--Question 3-->
+                <p class="Q_number">Question 3</p>
+                <p class="Question">Whats the world number one water park</p>
+                <input type="radio" class="answer" name="answer3" value="0">Funspot Laconia- USA<br>
+                <input type="radio" class="answer" name="answer3" value="1">Siam park - Spain<br>
+                <input type="radio" class="answer" name="answer3" value="2">Beach park - Brazil<br>
+                <input type="radio" class="answer" name="answer3" value="3">chimelong paradise - China<br>
+            </div>
+            <div class="question_box"><!--Question 4-->
+                <p class="Q_number">Question 4</p>
+                <p class="Question">What is the largest arcade in the world</p>
+                <input type="radio" class="answer" name="answer4" value="0">Club-sega- Japan<br>
+                <input type="radio" class="answer" name="answer4" value="1">Funspot Laconia- USA<br>
+                <input type="radio" class="answer" name="answer4" value="2">Sega repulic - Dubai<br>
+                <input type="radio" class="answer" name="answer4" value="3">Joypolis - Japan<br>
+            </div>
+            <div class="question_box"><!--Question 5-->
+                <p class="Q_number">Question 5</p>
+                <p class="Question">Whats the former name of the Funspot?</p>
+                <input type="radio" class="answer" name="answer5" value="0">Double dragon<br>
+                <input type="radio" class="answer" name="answer5" value="1">Weirs sport cente<br>
+                <input type="radio" class="answer" name="answer5" value="2">Donkey kong<br>
+                <input type="radio" class="answer" name="answer5" value="3">Frogger<br>
+            </div>
+            <div class="question_box"><!--Question 6-->
+                <p class="Q_number">Question 6</p>
+                <p class="Question">What is the best game arcade in the world?</p>
+                <input type="radio" class="answer" name="answer6" value="0">Joypolis- Japan<br>
+                <input type="radio" class="answer" name="answer6" value="1">Funspot Laconia- USA<br>
+                <input type="radio" class="answer" name="answer6" value="2">The heart of gamng- England<br>
+                <input type="radio" class="answer" name="answer6" value="3">Anuta no warehouse - Japan<br>
+            </div>
+            <div class="question_box"><!--Question 7-->
+                <p class="Q_number">Question 7</p>
+                <p class="Question">Whats the meaning of TPS in game shooting?.</p>
+                <input type="radio" class="answer" name="answer7" value="0">Third person Shooter.<br>
+                <input type="radio" class="answer" name="answer7" value="1">Boomer shooter<br>
+                <input type="radio" class="answer" name="answer7" value="2">Tractical shooter<br>
+                <input type="radio" class="answer" name="answer7" value="3">Looter shooter<br>
+            </div>
+            <div class="question_box"><!--Question 8-->
+                <p class="Q_number">Question 8</p>
+                <p class="Question">Find the mis matching equipment in VR headsets?.</p>
+                <input type="radio" class="answer" name="answer8" value="0">HP reverb<br>
+                <input type="radio" class="answer" name="answer8" value="1">Value Index<br>
+                <input type="radio" class="answer" name="answer8" value="2">Met quest<br>
+                <input type="radio" class="answer" name="answer8" value="3">Oculus Quest<br>
+            </div>
+            <div class="question_box"><!--Question 9-->
+                <p class="Q_number">Question 9</p>
+                <p class="Question">Which year VR games started?</p>
+                <input type="radio" class="answer" name="answer9" value="0">"1980"<br>
+                <input type="radio" class="answer" name="answer9" value="1">"1990"<br>
+                <input type="radio" class="answer" name="answer9" value="2">"1979"<br>
+                <input type="radio" class="answer" name="answer9" value="3">"1988"<br>
+            </div>
+            <div class="question_box"><!--Question 10-->
+                <p class="Q_number">Question 10</p>
+                <p class="Question">What do you think obout ceyloland?</p>
+                <input type="radio" class="answer" name="answer10" value="0">Very Good<br>
+                <input type="radio" class="answer" name="answer10" value="1"> Good<br>
+                <input type="radio" class="answer" name="answer10" value="2">Very Bad<br>
+                <input type="radio" class="answer" name="answer10" value="3"> Bad<br>
+            </div>
+            <div class="question_box">
+                <div class="btn"><!--Created two buttons for go to back to top and to submit answers-->
+                <button class="backtotop" onclick="backtotop()">Back to Top</button>
+                <button class="submit" onclick=" Results()">Submit</button>
+                </div>
+            </div>
+           
+            
+        </div>
+        <div class="show_Result" id="Result_Box" hidden><!--Created table for view the answers customer gave and view the correct answers.-->
+            <div id="total"></div>
+            <p id="crown" hidden><i class="fas fa-crown"></i></p>
+            <table>
+                
+                <tr>
+                  <th>Question Number</th>
+                  <th>Correct Answer</th>
+                  <th>Your Answer</th>
+                </tr>
+                <tr>
+                    <td>Question 1</td>
+                    <td>2</td>
+                    <td id="q1"></td>
+                </tr>
+                <tr>
+                    <td>Question 2</td>
+                    <td>3</td>
+                    <td id="q2"></td>
+                </tr>
+                <tr>
+                    <td>Question 3</td>
+                    <td>2</td>
+                    <td id="q3"></td>
+                </tr>
+                <tr>
+                    <td>Question 4</td>
+                    <td>2</td>
+                    <td id="q4"></td>
+                </tr>
+                <tr>
+                    <td>Question 5</td>
+                    <td>2</td>
+                    <td id="q5"></td>
+                </tr>
+                <tr>
+                    <td>Question 6</td>
+                    <td>2</td>
+                    <td id="q6"></td>
+                </tr>
+                <tr>
+                    <td>Question 7</td>
+                    <td>1</td>
+                    <td id="q7"></td>
+                </tr>
+                <tr>
+                    <td>Question 8</td>
+                    <td>4</td>
+                    <td id="q8"></td>
+                </tr>
+                <tr>
+                    <td>Question 9</td>
+                    <td>1</td>
+                    <td id="q9"></td>
+                </tr>
+                <tr>
+                    <td>Question 10</td>
+                    <td>1</td>
+                    <td id="q10"></td>
+                </tr>
+
+            </table>
+            
+        </div>
+        <script src="quiz.js"></script><!--Link the JavaScript file-->
+		
+		<!-- FOOTER SECTION -->
+		<footer>
+			<div class="footerpart">
+				<div class="firstrow">
+					<div class="firstcolumn">
+					  <ul id="ceyloicon">
+						<li><a><img src="../images/logo1.png" width="200" height="180" alt="ceylo logo"></a></li>
+					  </ul>
+					</div>
+					
+					<div class="socialMediaIcon">
+					  <a href="https://www.facebook.com/iitsl/" target="_blank"><img src="../images/fb.webp" height="40" width="45" alt="facebook"></a>
+					  <a href="https://twitter.com/iitsrilanka?lang=en" target="_blank"><img src="../images/twit.webp"  height="40" width="45" alt="twitter"></a>
+					  <a href="https://www.instagram.com/iitlife/?hl=en" target="_blank"><img src="../images/inst.webp"  height="40" width="45" alt="instagram"></a>
+					  <a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA" target="_blank"><img src="../images/yout.webp"  height="40" width="45" alt="youtube"></a>
+					</div>
+				
+					<div class="Secondcolumn">
+					    <ul id="footerNav">
+							<li ><span style="margin-bottom: 20px;font-weight:bold;font-size:22px;">NAVIGATE</span></li>
+							<li><a href="../Sitemap/sitemap.html" target="_blank">Site map </a></li>
+							<li><a href="../AboutUs/aboutus.html" target="_blank"> About us</a></li>
+						</ul> 
+						<ul>
+							<li>Contact us-0762231234</li>
+							<li>Email-ceyloland@gmail.com</li>
+							<li>waters edge lane,Mirissa,Matara</li>
+							<li>Sri lanka</li>
+						</ul>
+					</div>
+
+					<div class="bottom">
+						<p>©Copyright CEYLOLAND 2023 All Rights Reserved.</p>
+						<p><a href="../Student3/pageeditor.html" target="_blank">View Page Editor</a></p>
+					</div>
+					
+				</div>	
+				<br><br>
+				<div><a href="#top" class="btn1">back to top</a> </div>
+			</div>
+		</footer>			
+
+    
+
+        
+
+    </body>
+
+</html>

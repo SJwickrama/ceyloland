@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>SHOP</title>
+	<link rel="stylesheet" href="shop-styles.css">
+    <script src="shop.js" async></script>
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" 
+	integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" 
+	crossorigin="anonymous" referrerpolicy="no-referrer" >
+  
+  </head>
+  
+  
+  
+  
+  <body>
+  
+    <!-- NAVIGATION SECTION -->
+    <header class="nav-bar">
+      <nav class="flex">
+        <img id="logo" src="../images/logo1.png" alt=" logo" >
+        <ul>
+          <!-- All nav links not yet working cause other member files not available in individual submission -->
+         <li><a href="../Main/main.html">Home</a></li>
+         <li><a href="../Thumbnail/thumbnail.html">Gallery</a></li>
+         <li><a  href="../Quiz/quiz.html">Quiz</a></li>
+		 <li><a class="active" href="../Shop/shop.html">Shop</a></li>
+		 <li><a href="../Sitemap/sitemap.html">Sitemap</a></li>
+		 <li><a href="../Feedback/feedback.html">Feedback</a></li>
+         <li><a href="../AboutUs/about.html">About us</a></li>
+		  
+        </ul>
+      </nav>
+    </header> 
+  
+    <section class="product-page">
+		<h1 class="product-header">Our Products</h1>
+		<div class="product-page-content">
+			<div class="product-form">
+			  <form>
+				<div class="product-form-element">
+				  <label for="customer-name">Name    : </label>
+				  <input type="text" id="customer-name" name="name" >
+				</div>
+				<div class="product-form-element">
+				  <label for="customer-email">E-Mail : </label>
+				  <input type="text" id="customer-email" name="email" >
+				</div>
+			  </form>
+			</div>	
+			<!-- PRODUCTS SECTION -->
+			<div class="products-flex">
+			
+			  <div class="product cap">
+				<img
+				  class="product-image"
+				  src="../images/cap.jpg"
+				  alt="Cap Image"
+				  
+				>
+				
+				<div class="product-details">
+				  <span class="product-name">Cap</span>
+				  <span class="product-price">$2.5</span>
+				  <div class="addtocart-wrapper">
+					<button class="btn btn-addtocart" type="button">
+					  <i class="fas fa-shopping-cart"></i>Add to cart
+					</button>
+				  </div>
+				</div>
+			  </div>
+			 
+			  <div class="product tshirt">
+				<img
+				  class="product-image"
+				  src="../images/Tshirt.jpg"
+				  alt="T-Shirt Image"
+				  
+				>
+				
+				<div class="product-details">
+				  <span class="product-name">T-Shirt</span>
+				  <span class="product-price">$6.2</span>
+				  <div class="addtocart-wrapper">
+					<button class="btn btn-addtocart" type="button">
+					  <i class="fas fa-shopping-cart"></i>Add to cart
+					</button>
+				  </div>
+				</div>
+			  </div>
+			  
+			  
+			  <div class="product mug">
+				<img
+				  class="product-image"
+				  src="../images/Mug.jpg"
+				  alt="Mug Image"
+				  
+				>
+				
+				<div class="product-details">
+				  <span class="product-name">Ceramic Mug</span>
+				  <span class="product-price">$1.7</span>
+				  <div class="addtocart-wrapper">
+					<button class="btn btn-addtocart" type="button">
+					  <i class="fas fa-shopping-cart"></i>Add to cart
+					</button>
+				  </div>
+				</div>
+			  </div>
+			  
+			  
+			  
+			  <div class="product bag">
+				<img
+				  class="product-image"
+				  src="../images/Bag.jpg"
+				  alt="Bag Image"
+				  
+				>
+				
+				<div class="product-details">
+				  <span class="product-name">Tote Bag</span>
+				  <span class="product-price">$1.4</span>
+				  <div class="addtocart-wrapper">
+					<button class="btn btn-addtocart" type="button">
+					  <i class="fas fa-shopping-cart"></i>Add to cart
+					</button>
+				  </div>
+				</div>
+			  </div>
+			  
+			 
+			  <div class="product keytag">
+				<img
+				  class="product-image"
+				  src="../images/KeyTag.jpg"
+				  alt="KeyTag Image"
+				  
+				>
+				
+				<div class="product-details">
+				  <span class="product-name">KeyTag</span>
+				  <span class="product-price">$0.8</span>
+				  <div class="addtocart-wrapper">
+					<button class="btn btn-addtocart" type="button">
+					  <i class="fas fa-shopping-cart"></i>Add to cart
+					</button>
+				  </div>
+				</div>
+			  </div>
+			  
+			  <div class="product umbrella">
+				<img
+				  class="product-image"
+				  src="../images/Umbrella.jpg"
+				  alt="Umbrella Image"
+				  
+				>
+				<div class="product-details">
+				  <span class="product-name">Umbrella</span>
+				  <span class="product-price">$5.3</span>
+				  <div class="addtocart-wrapper">
+					<button class="btn btn-addtocart" type="button">
+					  <i class="fas fa-shopping-cart"></i>Add to cart
+					</button>
+				  </div>
+				</div>
+			  </div>
+			</div>
+			
+			<!-- PRODUCT CART SECTION -->
+			<div class="cart invisible" id="cart">
+			
+			  <div class="cart-row">
+				<span class="cart-item cart-header cart-column">ITEM</span>
+				<span class="cart-price cart-header cart-column">PRICE</span>
+				<span class="cart-quantity cart-header cart-column">QUANTITY</span>
+			  </div>
+			  
+			  <div class="cart-items"></div>
+			  <div class="cart-total">
+				<strong class="cart-total-title">Total : </strong>
+				<span class="cart-total-price">$0</span>
+			  </div>
+			  <hr>
+			  <button class="btn btn-primary btn-purchase" type="button">
+				<i class="fas fa-shopping-cart"></i>Place Order
+			  </button>
+			</div>
+		</div>	
+			<!-- INVOICE SECTION -->
+		<div class="invoice-content-page">
+
+            <div class="invoice-content  invisible">
+				<div class="invoice-container">
+				  <div class="customer-details">
+					<h6>Customer Details</h6>
+					<p class="customer-name-invoice"></p>
+					<p class="customer-email-invoice"></p>
+				  </div>
+				  <div class="invoice-details">
+					<h6>Invoice Details</h6>
+					<div class="invoice-rows"></div>
+					<div class="invoice-total"><strong>Total Bill : </strong> $100</div>
+				  </div>
+				</div>
+				<button class="btn btn-edit">
+				  <i class="fas fa-pen"></i>Change Order
+				</button>
+			</div>
+		</div>
+			
+    </section>
+	
+	
+	<!-- FOOTER SECTION -->
+		<footer>
+			<div class="footerpart">
+				<div class="firstrow">
+					<div class="firstcolumn">
+					  <ul id="ceyloicon">
+						<li><img src="../images/logo1.png" width="200" height="180" alt="ceylo logo"></li>
+					  </ul>
+					</div>
+					
+					<div class="socialMediaIcon">
+					  <a href="https://www.facebook.com/iitsl/"><img src="../images/fb.webp" height="40" width="45" alt="facebook"></a>
+					  <a href="https://twitter.com/iitsrilanka?lang=en"><img src="../images/twit.webp"  height="40" width="45" alt="twitter"></a>
+					  <a href="https://www.instagram.com/iitlife/?hl=en"><img src="../images/inst.webp"  height="40" width="45" alt="instagram"></a>
+					  <a href="https://www.youtube.com/channel/UC02DMFclK9vaEdOIKSiaNkA"><img src="../images/yout.webp"  height="40" width="45" alt="youtube"></a>
+					</div>
+				
+					<div class="Secondcolumn">
+					  <ul id="footerNav">
+						  <li ><span style="margin-bottom: 20px;font-weight:bold;font-size:22px;">NAVIGATE</span></li>
+						  <li><a href="../Sitemap/sitemap.html">Site map </a></li>
+						  <li><a href="../AboutUs/aboutus.html" > About us</a></li>
+					  </ul>
+					  <ul>
+						  <li>Contact us-0762231234</li>
+						  <li>Email-ceyloland@gmail.com</li>
+						  <li>waters edge lane,Mirissa,Matara</li>
+						  <li>Sri lanka</li>
+					  </ul>
+					</div>
+
+					<div class="bottom">
+						<p>©Copyright CEYLOLAND 2023 All Rights Reserved.</p>
+						<p class="viewpageeditor">
+						<a href="../Student1/pageeditor.html">View Page Editor</a>
+						</p>
+					</div>
+					
+				</div>	
+				<br><br>
+				<div><a href="#top" class="btn1">back to top</a> </div>
+			</div>
+		</footer>			
+  
+  
+  </body>
+</html>

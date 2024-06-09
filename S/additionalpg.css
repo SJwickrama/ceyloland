@@ -1,0 +1,454 @@
+/*---NAVIGATION STYLES---*/
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+header {
+  position: sticky;
+  top: 0px;
+  justify-content: flex-end;
+  width: 98.7vw;
+  z-index: 5;
+  background: black;
+}
+
+nav {
+  min-height: 10vh;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color:black;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+  font-family:Trebuchet MS;
+  font-size:25px;
+}
+
+#logo {
+  max-width: 100px;
+  margin-left:50px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+nav ul {
+  align-items: center;
+  
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 23px;
+  border-radius: 30px;
+  border: 2px transparent solid;
+  transition: all 0.4s ease;
+}
+
+nav a:hover {
+  border: 2px solid;
+  background-color:#1CE7B2 ;
+}
+
+.active {
+  color: white;
+  background-color: var(--orange);
+  border-radius: 30px;
+}
+
+
+body {
+    font-family: Arial;
+    margin: 0;
+    background-color: rgba(128, 128, 128, 0.902);
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  .topic{
+    color: blue;
+    padding: 60px;
+    font-size: 40px;
+  }
+  
+  img {
+    vertical-align: middle;
+  }
+  
+  /* Position the image container (needed to position the left and right arrows) */
+  .container {
+    position: relative;
+    border: 10px solid #2b257b;
+
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+    width: 100%;
+    height: 100%;
+
+  }
+  
+  /* Add a pointer when hovering over the thumbnail images */
+  .cursor {
+    cursor: pointer;
+  }
+  
+  /* Next & previous buttons */
+  .prev,
+  .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    padding: 16px;
+    margin-top: -50px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover,
+  .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* Container for image text */
+  .caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+  }
+  
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Six columns side by side */
+  .column {
+    float: left;
+    width: 16.66%;
+  }
+  
+  /* Add a transparency effect for thumnbail images */
+  .demo {
+    opacity: 0.6;
+  }
+  
+  .active,
+  .demo:hover {
+    opacity: 1;
+  }
+
+
+
+  
+  
+  body {
+    background-color: #f1f1f181;
+    padding: 20px;
+    font-family: Arial;
+  }
+  
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    padding: 30px;
+    padding-top: 80px;
+  }
+  
+  p{
+	  font-size: 20px;
+  }
+  h3{
+    padding: 20px;
+  }
+  .packages> h3{
+    padding: 80px;
+  }
+  
+  .packages {
+    margin: 8px -16px;
+    background-color: rgb(29, 120, 185);
+  }
+  
+  /* Add padding BETWEEN each column */
+  .packages,
+  .packages > .pictures {
+    padding: 8px;
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .pictures {
+    float: left;
+    width: 25%;
+	
+  }
+  
+  /* Clear floats after rows */ 
+  .packages:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  #content1 {
+    background-color: white;
+    padding: 10px;
+	padding-bottom:110%;
+  }
+  #content2 {
+    background-color: white;
+    padding: 10px;
+	padding-bottom:112%;
+  }
+  #content3 {
+    background-color: white;
+    padding: 10px;
+	padding-bottom:19%;
+  }
+  #content4 {
+    background-color: white;
+    padding: 10px;
+	padding-bottom:100%;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .pictures {
+      width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .pictures {
+      width: 100%;
+    }
+  }
+  
+  /*--------------------------------------------------------------------------------*/
+  /* Container needed to position the overlay. Adjust the width as needed */
+.container-slides {
+  position: relative;
+  width: 50%;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #8D929A;
+  overflow: hidden;
+  width:350px;
+  height:205px;
+  transform: scale(0);
+  transition: .3s ease;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container-slides:hover .overlay {
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.info {
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.image{
+	width:350px;
+	height:200px;
+}
+
+.inline{
+	display:flex;
+	margin-left:auto;
+	margin-right:auto;
+}
+/*--------------------------------------------------------------------------------*/
+/*---FOOTER SECTION---*/
+.row {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+
+footer{
+	margin-left:-2%;
+	margin-right:-5%;
+	margin-bottom:-12%;
+}
+ 
+.footerpart {
+ width: 100%;
+ height:400px;
+ background-color:black;
+ padding-left:0 ;
+ padding-top: 1%;
+ color: white;
+ position:static;
+ top:0;
+ right:0;
+ left:0;
+ 
+}
+
+
+.firstcolumn {
+float: left;
+width: 45%;
+padding: 10px;
+height: 300px;
+
+}
+
+.Secondcolumn {
+float: right;
+width: 50%;
+padding: 10px;
+height: 300px;
+
+}
+
+.firstrow {
+	   height: 300px;
+   }
+   
+
+
+.firstrow:after {
+content: "";
+display: table;
+clear: both;
+
+}
+
+
+#ceyloicon {
+ list-style: none;
+ margin-left: 20%;
+}
+
+
+
+#ceyloicon li{
+display: inline;
+}
+
+#footerNav {
+list-style: none;
+}
+#footerNav li a {
+text-decoration: none;
+color:white ;
+padding-top: 1%;
+
+}
+
+
+#footerNav li{
+padding-bottom:1%;
+}
+
+
+.bottom {
+
+width: 100%;
+padding-left:0.5% ;
+padding-top: 0.5%;
+padding-bottom: 0.8%;
+text-align:center;
+
+}
+.space{
+  padding-top: 80px;
+}
+
+/*---Back to top button styling---*/
+
+.btn1{
+    background-color:rgb(174, 166, 166);
+    color:black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    left: 52%;
+    top: -1vh;
+    margin-top: -10px;
+    position: relative;
+    text-align-last: right;
+	margin-left:500px;
+	
+   }
+   .btn1:hover{
+      background-color: azure;
+      color:black;
+   }
