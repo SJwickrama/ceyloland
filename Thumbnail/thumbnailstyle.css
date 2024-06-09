@@ -1,0 +1,373 @@
+/*---NAVIGATION STYLES---*/
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-center {
+  align-items: center;
+  justify-content: center;
+}
+
+header {
+  position: sticky;
+  top: 0px;
+  justify-content: flex-end;
+  width: 98.7vw;
+  z-index: 5;
+  background: black;
+}
+
+nav {
+  min-height: 10vh;
+  width: 100%;
+  margin: auto;
+  align-items: center;
+  justify-content: space-between;
+  background-color:black;
+  position:fixed;
+  top:0;
+  right:0;
+  left:0;
+}
+
+#logo {
+  max-width: 100px;
+  margin-left:50px;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+nav ul {
+  align-items: center;
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+}
+
+nav a {
+  font-size: 17px;
+  text-decoration: none;
+  color: white;
+  padding: 5px 23px;
+  border-radius: 30px;
+  border: 2px transparent solid;
+  transition: all 0.4s ease;
+}
+
+nav a:hover {
+  border: 2px solid;
+  background-color:#1CE7B2 ;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/*-----------------------------------------------------------------------------------------------------------*/
+
+/* Styles for the body */
+body {
+    background-color: #B0C3D6; 
+    font-size: 16px; 
+	font-family:Trebuchet MS;
+}
+
+/* Styles for the header */
+h1 {
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+div.gallery {
+  margin: 5px;
+  border: 1px solid #ccc;
+  float: left; 
+}
+
+div.gallery:hover {
+  border: 2px solid ;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  text-align: center;
+  background-color:white;
+}
+
+/* Styles for the selector */
+.selector {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+.selector select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-size: 1.2em;
+    background-color: #333;
+}
+
+.selector select option {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Styles for the thumbnail images */
+.thumbnail {
+    display: inline-block;
+    margin: 10px;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: transform 0.5s;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 10px;
+  }
+
+.item {
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  .item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .item:hover img {
+    transform: scale(1.1);
+  }
+  
+ 
+/* css for clickable images */
+.clicking{
+    position: relative;
+    min-height: 100vh;
+	padding-top:8%;
+}
+
+/* css for h1 tag uses */
+.clicking h1{
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 15px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+/* css for clickable 6 thumbnail image containers */
+.clicking .imagecontainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+
+}
+/* css for image borders */
+.clicking .imagecontainer .image{
+    height: 350px;
+    width: 300px;
+    border: 5px solid white; 
+    overflow: hidden;
+    cursor: pointer; 
+
+}
+
+/* css for thumbnail images */
+.clicking .imagecontainer .image img{
+    height: 350px;
+    width: 300px;
+    object-fit: cover; 
+}
+
+/* css for pop-up-image background */
+.clicking .pop-up-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background:#826EF2;
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display:none ;
+}
+
+/* css for big image's short introductions */
+.clicking .pop-up-image span{
+    position:absolute ;
+    top:0 ;
+    right: 10px;
+    font-size: 40px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+/* css for big images */
+.clicking .pop-up-image img{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 5px solid white;
+    border-radius: 5px;
+    width: 300px;
+    height: 350px;
+    object-fit: cover;
+}
+/*css for picture descriptions*/
+.pic-text {
+    margin-top:400px;
+    text-align: center;
+    font-size: small;
+    left: 0%;   
+}
+
+/*---------------------------------------------------------------------------------------------------------------*/
+
+/*---FOOTER SECTION---*/
+.row {
+  display: flex;
+}
+ul {
+  list-style: none;
+}
+
+footer{
+	margin-left:-2%;
+	margin-right:-2%;
+	margin-bottom:-2%;
+}
+ 
+.footerpart {
+ width: 100%;
+ height:400px;
+ background-color:black;
+ padding-left:0 ;
+ padding-top: 1%;
+ color: white;
+ position:static;
+ top:0;
+ right:0;
+ left:0;
+ 
+}
+
+
+.firstcolumn {
+float: left;
+width: 45%;
+padding: 10px;
+height: 300px;
+
+}
+
+.Secondcolumn {
+float: right;
+width: 50%;
+padding: 10px;
+height: 300px;
+
+}
+
+.firstrow {
+	   height: 300px;
+   }
+   
+
+
+.firstrow:after {
+content: "";
+display: table;
+clear: both;
+
+}
+
+
+#ceyloicon {
+ list-style: none;
+ margin-left: 20%;
+}
+
+
+
+#ceyloicon li{
+display: inline;
+}
+
+#footerNav {
+list-style: none;
+}
+#footerNav li a {
+text-decoration: none;
+color:white ;
+padding-top: 1%;
+
+}
+
+
+#footerNav li{
+padding-bottom:1%;
+}
+
+
+.bottom {
+
+width: 100%;
+padding-left:0.5% ;
+padding-top: 0.5%;
+padding-bottom: 0.8%;
+text-align:center;
+
+}
+
+/*---Back to top button styling---*/
+
+.btn1{
+    background-color:rgb(174, 166, 166);
+    color:black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    left: 52%;
+    top: -1vh;
+    margin-top: -10px;
+    position: relative;
+    text-align-last: right;
+	margin-left:500px;
+	
+   }
+   .btn1:hover{
+      background-color: azure;
+      color:black;
+   }
+   
